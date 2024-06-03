@@ -3,6 +3,7 @@ const express = require('express')
 const { MongoClient, ObjectId } = require('mongodb')
 const app = express()
 const port = 3000
+const cors = require('cors')
 
 //Preparamos as informacoes de acesso ao banco de dados
 const dburl = process.env.DATABASE_URL
